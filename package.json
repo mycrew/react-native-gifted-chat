@@ -2,7 +2,7 @@
   "name": "react-native-gifted-chat",
   "version": "0.13.0",
   "description": "The most complete chat UI for React Native",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
@@ -36,7 +36,8 @@
     "test:watch": "TZ=Europe/Paris jest --watch",
     "test:coverage": "TZ=Europe/Paris jest --coverage",
     "prepublishOnly": "yarn lint && yarn build && yarn test && yarn config:npm",
-    "postpublish": "yarn config:dev"
+    "postpublish": "yarn config:dev",
+    "prepare": "npm run build"
   },
   "jest": {
     "preset": "react-native",
@@ -105,7 +106,7 @@
     "react-native-communications": "2.2.1",
     "react-native-iphone-x-helper": "^1.2.0",
     "react-native-lightbox": "^0.8.1",
-    "react-native-parsed-text": "https://github.com/EvanBacon/react-native-parsed-text.git",
+    "react-native-parsed-text": "0.0.21",
     "uuid": "3.3.3"
   },
   "peerDependencies": {
